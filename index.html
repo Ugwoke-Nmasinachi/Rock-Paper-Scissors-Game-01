@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="/css/styles.css">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+    <div class="wrapper">
+        <!--Container for home page-->
+        <div class="homePage" >
+            <h1>Welcome!</h1>
+            <p>This is Rock Paper Scissors!</p>
+            <div class="maxRoundsBtnBox" >
+                <button data-maxrounds="3" class="maxRoundsBtn">Best of 3</button>
+                <button data-maxrounds="5" class="maxRoundsBtn">Best of 5</button>
+                <button data-maxrounds="7" class="maxRoundsBtn">Best of 7</button>
+            </div>
+        </div>
+        <!--Container for game page-->
+        <div class="gamePage">
+             <header>
+                <p>ROCK PAPER SCISSORS</p>
+             </header>
+            <div class="scoreBoard">
+                <div class="playerScoreBox">
+                    <p id="playerScore">Player:0</p>
+                </div>
+                <div class="computerScoreBox">
+                    <p id="computerScore">Computer:0</p>
+                </div>
+            </div>
+            <div class="currentRoundResultBox">
+                <p id="currentRoundResult"></p>
+            </div>
+            <div class="gameImages">
+                <div class="imageBox">
+                    <img src="" alt="Player Image" id="playerImage">
+                    <p class="loading" id="playerLoad"><span></span><span></span><span></span></p>
+                </div>
+                <div class="vs">
+                       <p>VS</p>
+                </div>
+                <div class="imageBox">
+                    <img src="" alt="Computer Image" id="computerImage">
+                    <p class="loading" id="computerLoad"><span></span><span></span><span></span></p>
+                </div>
+            </div>
+            <div class="choices">
+                <button class="choiceBtn" data-choice="Rock">Rock</button>
+                <button class="choiceBtn" data-choice="Paper">Paper</button>
+                <button class="choiceBtn" data-choice="Scissors">Scissors</button>
+            </div>
+            <div class="showCurrentRoundBox">
+                <p id="showCurrentRound">Round 1 of 1</p>
+            </div>
+        </div>
+        <!--Container for results page-->
+        <div class="resultPage">
+            <p id="result">You Win!</p>
+            <p id="resultDetails">Wins: 1 Losses: 2 Tie: 1</p>
+            <div class="playAgainBtnBox">
+                <button id="playAgainBtn">Play Again</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
